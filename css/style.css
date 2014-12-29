@@ -1,0 +1,26 @@
+body {
+}
+
+#video {
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+#webplayer {
+    width: 640px;
+    height: 500px;
+}
+
+#controls > ul li {
+    display: inline;
+    border: 3px solid #aaa8a8;
+    background-color: #aaa8a8;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+}
+
+#controls > ul li :hover {
+    border-color: #808080;
+    background-color: #808080;
+    border-radius: 5px;
+}

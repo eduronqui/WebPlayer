@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <script src="/js/player.js" type="text/javascript"></script>
+        <script src="/js/movie.js" type="text/javascript"></script>
+        <link rel="stylesheet" href="/css/style.css" type="text/css">
+        <title></title>
+    </head>
+    <body>
+        <h2>My HTML5 web player</h2>
+        <div id="movies">
+            <p>Choose a movie:</p>
+            <ul>
+                <li><a href="javascript:player.LoadMovie(0);">Big Buck Bunny</a></li>
+                <li><a href="javascript:player.LoadMovie(1);">Elephant's Dream</a></li>
+            </ul>
+        </div>
+        <div id="webplayer">
+            <div id="player">
+                <video id="video" width="640" height="480" preload="metadata" poster="/images/novideo.png">
+                    <em>Unfortunately your browser does not support HTML5 video.</em>
+                </video>
+            </div>
+            <div id="controls">
+                <ul>
+                    <li><a onclick="player.PlayPause();">Play/Pause</a></li>
+                    <li><a onclick="player.Mute();">Mute</a></li>
+                    <li><a onclick="player.ChangeVolume('up')">+Vol</a></li>
+                    <li><a onclick="player.ChangeVolume('down')">-Vol</a></li>
+                    <!--<li><a onclick="player.GoFullscreen()">Go Fullscreen</a></li>-->
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
